@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wardah AM Club | GOERS</title>
+<meta name="description" content="Wardah AM Club — Women Fun Run 5K di 7 kota. Tiket Early Bird IDR 175K dari IDR 250K, hanya di GOERS.">
+<meta name="theme-color" content="#ffffff">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" type="image/png" href="logo-goers.png">
+<link rel="apple-touch-icon" href="logo-goers.png">
+<link rel="preload" as="image" href="banner-makassar.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+--ink:#20242c;--ink2:#5b6570;--mut:#8b94a0;--line:#eceef1;--soft:#f7f8fa;
+--brand:#d81b64;--brand2:#b91452;--brand-soft:#fdeef4;--green:#0f9d6c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--ink);font-family:'Plus Jakarta Sans',-apple-system,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--brand);color:#fff}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+svg.ic{width:18px;height:18px;fill:currentColor;flex:none}
+svg.ic.s{width:14px;height:14px}
+svg.ic.out{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.page{max-width:430px;margin:0 auto;background:#fff;display:flex;flex-direction:column;min-height:100vh;min-height:100svh}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;height:58px;padding:0 14px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.scrolled{border-color:var(--line)}
+.brand{display:flex;align-items:center}
+.brand img{height:26px;width:auto;display:block}
+.head-actions{display:flex;align-items:center;gap:8px}
+.locbtn{display:flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:600;color:var(--ink2)}
+.locbtn .ic{width:13px;height:13px;color:var(--brand)}
+.locbtn:hover{border-color:#d9dce2}
+.cartbtn{position:relative;width:38px;height:38px;border-radius:50%;background:var(--soft);display:grid;place-items:center}
+.cartbtn .ic{width:17px;height:17px;color:var(--ink2)}
+.cartbtn:hover{background:#edeef2}
+.badge{position:absolute;top:-3px;right:-3px;min-width:17px;height:17px;padding:0 4px;border-radius:999px;background:var(--brand);color:#fff;font-size:10px;font-weight:800;line-height:17px;text-align:center}
+.badge.pop{animation:pop .3s}
+main{flex:1;padding:14px 14px 6px}
+.crumb{font-size:12px;color:var(--mut);margin-bottom:14px}
+.crumb b{color:var(--ink2)}
+#profile,#experiences{scroll-margin-top:76px}
+.profile{display:flex;align-items:center;gap:12px}
+.avatar{width:58px;height:58px;border-radius:50%;background:var(--brand-soft);border:1px solid #f6d3e1;flex:none;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.pinfo{flex:1;min-width:0}
+.pinfo h1{font-size:18px;font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:6px}
+.pinfo p{font-size:12px;color:var(--mut);margin-top:2px}
+.vcheck{width:20px;height:20px;border-radius:50%;border:1.5px solid var(--green);color:var(--green);display:inline-grid;place-items:center;flex:none}
+.vcheck .ic{width:11px;height:11px}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.pill{background:var(--soft);border-radius:999px;padding:5px 10px;font-size:11px;font-weight:600;color:var(--ink2)}
+.pill.grn{background:#e6f6ef;color:var(--green)}
+.socials{display:flex;gap:8px;margin:16px 0 20px}
+.socials button{width:36px;height:36px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--ink2);transition:.15s}
+.socials button:hover{background:var(--brand-soft);color:var(--brand)}
+.sec-title{font-size:15px;font-weight:800;letter-spacing:-.01em}
+.sec-title::after{content:"";display:block;width:38px;height:3px;border-radius:2px;background:var(--brand);margin-top:7px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:12px;font-weight:600;color:var(--ink2);background:#fff;transition:.15s}
+.chip:hover{border-color:#d5d9e0}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.intro{font-size:13px;color:var(--ink2);margin:6px 0 14px}
+.intro b{color:var(--ink)}
+.list{display:grid;gap:14px}
+.card{position:relative;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 1px 2px rgba(18,22,30,.05);animation:cardin .45s backwards;animation-delay:calc(var(--i)*50ms);transition:box-shadow .2s,transform .2s;content-visibility:auto;contain-intrinsic-size:auto 360px}
+@media(hover:hover){.card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(18,22,30,.12)}.card:hover .hero img{transform:scale(1.04)}}
+.card:has(.tap:active,.hero-link:active){transform:scale(.985)}
+.hero{position:relative;aspect-ratio:48/25;overflow:hidden;background:linear-gradient(135deg,#fdeef4,#f6e0ec)}
+.hero-link{position:absolute;inset:0;display:block}
+.hero-link:focus-visible{outline:2px solid var(--brand);outline-offset:-4px}
+.hero img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.tag{position:absolute;top:10px;left:10px;background:var(--brand);color:#fff;font-size:10.5px;font-weight:700;padding:4px 8px;border-radius:999px}
+.heart{position:absolute;top:8px;right:8px;z-index:2;width:33px;height:33px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;color:var(--ink2);box-shadow:0 1px 4px rgba(0,0,0,.12);transition:color .15s}
+.heart:hover{color:var(--brand)}
+.heart .ic{width:16px;height:16px}
+.heart.on{color:var(--brand)}
+.heart.on .ic{fill:var(--brand);animation:pop .32s}
+.cbody{position:relative;padding:11px 13px 13px}
+.esub{font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--brand);margin-bottom:3px}
+.cbody h3{font-size:14.5px;font-weight:700;letter-spacing:-.01em;margin-bottom:7px}
+.meta{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--ink2);margin:4px 0}
+.meta .ic{color:var(--mut)}
+.cfoot{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+.pax{display:flex;align-items:center}
+.pax i{width:22px;height:22px;border-radius:50%;border:2px solid #fff;margin-left:-6px;display:grid;place-items:center;font-style:normal;font-size:10px;font-weight:700;color:#4a5560}
+.pax i:first-child{margin-left:0}
+.pax em{font-style:normal;font-size:10.5px;font-weight:600;color:var(--mut);margin-left:6px}
+.cost{display:flex;align-items:center;gap:6px}
+.off{background:var(--brand-soft);color:var(--brand);font-size:10.5px;font-weight:800;padding:3px 7px;border-radius:999px}
+.price{font-size:15px;font-weight:800;color:var(--brand)}
+.tap{position:absolute;inset:0;z-index:1;cursor:pointer;border-radius:0 0 15px 15px}
+.tap:focus-visible{outline-offset:-3px}
+.empty{text-align:center;padding:38px 18px 30px;border:1px dashed var(--line);border-radius:16px}
+.empty .ic{width:34px;height:34px;color:#c6ccd6;margin-bottom:10px}
+.empty b{display:block;font-size:14px;margin-bottom:4px}
+.empty p{font-size:12.5px;color:var(--mut);margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:0 20px;border-radius:999px;font-weight:700;font-size:13px;border:1px solid var(--line);background:#fff;transition:.15s}
+.btn:hover{border-color:#d5d9e0}
+.btn:active{transform:scale(.97)}
+.btn.pri{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn.pri:hover{background:var(--brand2)}
+footer{background:var(--soft);border-top:1px solid var(--line);padding:26px 18px 30px;font-size:12px;color:var(--ink2)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 18px}
+.fh{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+.fitem{margin:5px 0}
+.fitem a:hover{color:var(--brand)}
+.support{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.support .fh{margin-top:12px}
+.support .fh:first-child{margin-top:0}
+.fbrand{margin-top:22px;padding-top:22px;border-top:1px solid var(--line);text-align:center}
+.marks{display:flex;justify-content:center;align-items:center;gap:10px;margin:10px 0 16px}
+.marks b{font-weight:800;font-size:19px;letter-spacing:.14em;color:var(--ink)}
+.cert{border:1px solid #dcdee4;border-radius:6px;padding:5px 8px;font-size:9.5px;font-weight:700;letter-spacing:.05em;color:var(--mut);line-height:1.35;text-transform:uppercase}
+.fsoc{display:flex;justify-content:center;gap:8px;margin:4px 0 14px}
+.fsoc button{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:var(--ink2)}
+.fsoc button:hover{color:var(--brand);background:var(--brand-soft)}
+.legal{font-size:10px;color:var(--mut);line-height:1.6}
+.bottomnav{position:sticky;bottom:0;z-index:20;display:flex;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.bottomnav button{flex:1;position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0 8px;font-size:10.5px;font-weight:600;color:var(--mut);transition:color .15s}
+.bottomnav .ic{width:20px;height:20px}
+.bottomnav button.on{color:var(--brand)}
+.navbadge{position:absolute;top:5px;left:calc(50% + 7px);min-width:15px;height:15px;padding:0 3px;border-radius:999px;background:var(--brand);color:#fff;font-size:9px;font-weight:800;line-height:15px;text-align:center}
+.backdrop{position:fixed;inset:0;background:rgba(16,19,26,.55);z-index:40;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.backdrop.show{opacity:1;visibility:visible}
+.sheet{position:fixed;left:0;right:0;bottom:0;margin:0 auto;max-width:430px;max-height:92vh;max-height:92svh;z-index:50;background:#fff;border-radius:22px 22px 0 0;display:flex;flex-direction:column;transform:translateY(104%);visibility:hidden;transition:transform .34s cubic-bezier(.2,.8,.25,1),visibility .34s;box-shadow:0 -12px 40px rgba(18,22,30,.2)}
+.sheet.show{transform:none;visibility:visible}
+.sh-hero{position:relative;flex:none;aspect-ratio:48/20;overflow:hidden;border-radius:22px 22px 0 0;background:linear-gradient(135deg,#fdeef4,#f6e0ec)}
+.sh-link{position:absolute;inset:0;display:block}
+.sh-link:focus-visible{outline:2px solid var(--brand);outline-offset:-4px}
+.sh-hero img{display:block;width:100%;height:100%;object-fit:cover}
+.sh-btn{position:absolute;top:10px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;color:var(--ink2);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.sh-close{right:10px}
+.sh-fav{left:10px}
+.sh-btn .ic{width:16px;height:16px}
+.sh-fav.on{color:var(--brand)}
+.sh-fav.on .ic{fill:var(--brand)}
+.sh-body{overflow-y:auto;padding:16px 18px 8px}
+.sh-body h2{font-size:18px;font-weight:800;letter-spacing:-.02em;padding-right:26px}
+.sh-org{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink2);margin:6px 0 12px}
+.sh-ava{width:24px;height:24px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--line)}
+.sh-meta{display:flex;align-items:center;gap:9px;font-size:13px;padding:9px 0;border-top:1px solid var(--line)}
+.sh-meta .ic{color:var(--mut);width:16px;height:16px}
+.sh-inc-t{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:16px 0 8px}
+.sh-inc{list-style:none}
+.sh-inc li{display:flex;gap:8px;align-items:center;font-size:12.5px;color:var(--ink2);padding:4px 0}
+.sh-inc .ic{color:var(--green)}
+.perfo{margin-top:18px;border-top:2px dashed var(--line);padding-top:16px;display:flex;align-items:center;justify-content:space-between}
+.qty{display:flex;align-items:center;gap:4px}
+.qty button{width:34px;height:34px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--ink)}
+.qty button:hover{background:#edeef2}
+.qty b{min-width:26px;text-align:center;font-size:14px}
+.tot{text-align:right}
+.tot>span{display:block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:2px}
+.tot s{color:var(--mut);font-size:12px;margin-right:6px}
+.totv{font-size:18px;font-weight:800;color:var(--brand)}
+.sh-cta{flex:none;display:flex;gap:10px;padding:12px 16px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+.sh-share{width:46px;height:46px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--ink2)}
+.sh-share:hover{background:#edeef2}
+.sh-share .ic{width:17px;height:17px}
+.sh-buy{flex:1;height:46px}
+.toast{position:fixed;left:16px;right:16px;bottom:calc(78px + env(safe-area-inset-bottom));margin:0 auto;max-width:360px;background:#1d222c;color:#fff;font-size:12.5px;font-weight:600;text-align:center;padding:12px 16px;border-radius:12px;z-index:60;opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s;box-shadow:0 8px 24px rgba(0,0,0,.25);pointer-events:none}
+.toast.show{opacity:1;visibility:visible;transform:none}
+@keyframes cardin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(.6)}55%{transform:scale(1.25)}100%{transform:scale(1)}}
+@media(min-width:700px){
+body{background:#e9ebef}
+.page{margin:26px auto;min-height:calc(100vh - 52px);min-height:calc(100svh - 52px);border-radius:26px;overflow:clip;box-shadow:0 24px 70px rgba(18,22,30,.18)}
+header{top:26px}
+.bottomnav{bottom:26px}
+.toast{bottom:calc(96px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+
+/* PROMAXXX visual upgrade */
+:root{--ink:#171923;--ink2:#5e6472;--mut:#8b91a0;--line:#e8e9ee;--soft:#f6f7f9;--brand:#e4005a;--brand2:#b90049;--brand-soft:#fff0f6;--green:#0b9b69}
+body{background:radial-gradient(circle at 8% -4%,rgba(228,0,90,.08),transparent 28%),radial-gradient(circle at 96% 12%,rgba(255,174,205,.16),transparent 25%),#fff}
+.page{max-width:460px;box-shadow:0 0 0 1px rgba(20,20,30,.025)}
+header{height:64px;padding:0 16px;background:rgba(255,255,255,.82);border-bottom-color:rgba(232,233,238,.7);box-shadow:0 4px 22px rgba(20,20,30,.035)}
+.brand img{height:28px;filter:drop-shadow(0 4px 10px rgba(228,0,90,.10))}.locbtn,.cartbtn{background:#fff;box-shadow:0 5px 16px rgba(20,20,30,.06)}
+main{padding:18px 15px 12px}.profile{padding:18px;border:1px solid #eeeef2;border-radius:24px;background:linear-gradient(145deg,#fff,#fff8fb);box-shadow:0 18px 50px rgba(22,24,35,.10)}
+.avatar{width:62px;height:62px;border:2px solid #fff;box-shadow:0 7px 22px rgba(228,0,90,.13)}.pinfo h1{font-size:19px}.socials button{background:#fff;border:1px solid #eeeef2;box-shadow:0 6px 16px rgba(20,20,30,.05)}
+.sec-title{font-size:17px}.sec-title::after{width:48px;height:4px;box-shadow:0 3px 10px rgba(228,0,90,.24)}.chip{background:#fff;box-shadow:0 4px 13px rgba(20,20,30,.035)}.chip.on{background:linear-gradient(135deg,#171923,#292c37);box-shadow:0 8px 20px rgba(23,25,35,.18)}
+.card{border:1px solid #e7e8ed;border-radius:21px;box-shadow:0 10px 32px rgba(20,22,32,.075)}.card:hover{box-shadow:0 20px 46px rgba(20,22,32,.14)}.hero{aspect-ratio:16/8.5}.tag{top:12px;left:12px;padding:6px 10px;box-shadow:0 7px 18px rgba(228,0,90,.2)}.heart{top:10px;right:10px;width:36px;height:36px;box-shadow:0 7px 20px rgba(0,0,0,.12)}.cbody{padding:14px 15px 15px}.cbody h3{font-size:15px}.price{font-size:16px}
+footer{background:linear-gradient(180deg,#fafbfc,#f4f5f7);padding:30px 19px 34px}.bottomnav{box-shadow:0 -10px 30px rgba(20,22,30,.06);background:rgba(255,255,255,.9)}.sheet{max-width:460px;border-radius:26px 26px 0 0;box-shadow:0 -20px 70px rgba(16,18,26,.25)}.sh-hero{aspect-ratio:16/7.5;border-radius:26px 26px 0 0}.sh-body{padding:18px 19px 9px}.sh-body h2{font-size:20px}.sh-buy{background:linear-gradient(135deg,#e4005a,#b90049)!important;box-shadow:0 12px 25px rgba(228,0,90,.22)}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><defs>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5zm2 4h5v5H7z"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a4.8 4.8 0 1 0-4.8-4.8A4.8 4.8 0 0 0 12 12zm0 2.4c-4.27 0-8 2.06-8 4.6V21h16v-2c0-2.54-3.73-4.6-8-4.6z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M12 3 2 11h3v9h5.5v-6h3v6H19v-9h3z"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/><path d="M16.8 7.2l-2.5 6.2a1 1 0 0 1-.55.55L7.5 16.5l2.5-6.2a1 1 0 0 1 .55-.55z"/></symbol>
+<symbol id="i-share" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a4 4 0 0 0 0 8v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2a4 4 0 0 0 0-8z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14z"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M13.4 21v-7.1h2.4l.36-2.8h-2.76V9.3c0-.81.23-1.36 1.39-1.36h1.49V5.46a20 20 0 0 0-2.17-.11c-2.15 0-3.62 1.31-3.62 3.72v2.03H9v2.8h2.09V21z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M17 1.8H7A5.2 5.2 0 0 0 1.8 7v10A5.2 5.2 0 0 0 7 22.2h10a5.2 5.2 0 0 0 5.2-5.2V7A5.2 5.2 0 0 0 17 1.8zM7 4.2h10A2.8 2.8 0 0 1 19.8 7v10a2.8 2.8 0 0 1-2.8 2.8H7A2.8 2.8 0 0 1 4.2 17V7A2.8 2.8 0 0 1 7 4.2z"/><path fill-rule="evenodd" d="M12 7.1a4.9 4.9 0 1 0 0 9.8 4.9 4.9 0 0 0 0-9.8zm0 2.4a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/><circle cx="17.2" cy="6.9" r="1.3"/></symbol>
+<symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.6 5.9a4.9 4.9 0 0 1-1.1-3h-3v11.7a2.6 2.6 0 1 1-1.9-2.5V8.9a5.6 5.6 0 1 0 4.9 5.5V9.3a7.9 7.9 0 0 0 4.5 1.4V7.6a4.9 4.9 0 0 1-3.4-1.7z"/></symbol>
+<symbol id="i-yt" viewBox="0 0 24 24"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15.1V8.9l5.2 3.1z"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5 21H1.9l7.3-8.3L2 3h6.4l4.4 5.9zm-1.1 16.2h1.7L7.5 4.7H5.7z"/></symbol>
+</defs></svg>
+
+<div class="page">
+  <header id="hdr">
+    <div class="brand"><img src="logo-goers.png" alt="GOERS" data-fb="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 122 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23d81b64'/%3E%3Cpath d='M9.6 7.4v9.2l7.8-4.6z' fill='%23fff'/%3E%3Ctext x='30' y='17.5' font-family='Arial,sans-serif' font-weight='700' font-size='15' fill='%2320242c'%3EGOERS%3C/text%3E%3C/svg%3E"></div>
+    <div class="head-actions">
+      <button type="button" class="locbtn" id="locBtn"><svg class="ic"><use href="#i-pin"/></svg>Jakarta</button>
+      <button type="button" class="cartbtn" id="cartBtn" aria-label="Keranjang belanja"><svg class="ic"><use href="#i-cart"/></svg><span class="badge" id="cartBadge" hidden>0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <p class="crumb">Beranda › <b>Wardah AM Club</b></p>
+
+    <section id="profile" aria-label="Profil penyelenggara">
+      <div class="profile">
+        <div class="avatar"><img src="logo-wardah.png" alt="Logo Wardah AM Club" data-fb="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23fdeef4'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23d81b64' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E"></div>
+        <div class="pinfo">
+          <h1>Wardah AM Club <span class="vcheck" role="img" aria-label="Akun terverifikasi"><svg class="ic"><use href="#i-check"/></svg></span></h1>
+          <p>7 experiences · Joined October 2026</p>
+        </div>
+      </div>
+      <div class="pills">
+        <span class="pill grn">1.373 Followers</span>
+        <span class="pill">Joined October 2026</span>
+        <span class="pill">7 experiences</span>
+        <span class="pill">Women Fun Run 5K</span>
+      </div>
+      <div class="socials">
+        <button type="button" data-net="Instagram" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></button>
+        <button type="button" data-net="TikTok" aria-label="TikTok"><svg class="ic"><use href="#i-tt"/></svg></button>
+        <button type="button" data-net="YouTube" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></button>
+        <button type="button" data-net="Facebook" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></button>
+        <button type="button" data-net="X" aria-label="X"><svg class="ic"><use href="#i-x"/></svg></button>
+      </div>
+    </section>
+
+    <section id="experiences" aria-label="Daftar event">
+      <h2 class="sec-title">Experiences</h2>
+      <div class="chips" id="chips" role="group" aria-label="Filter event"></div>
+      <p class="intro"><b>7 experiences are waiting for you. Secure your tickets now!</b><br><span id="listMeta" aria-live="polite"></span></p>
+      <div class="list" id="list"></div>
+      <div class="empty" id="empty" hidden>
+        <svg class="ic out"><use href="#i-heart"/></svg>
+        <b>Belum ada event favorit</b>
+        <p>Tandai event lewat ikon hati untuk menyimpannya di sini.</p>
+        <button type="button" class="btn" id="exploreBtn">Jelajahi Event</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fgrid">
+      <div>
+        <p class="fh">Menjualkan Event di GOERS</p>
+        <p class="fitem"><a href="#" data-foot>Platform terbaik lokal</a></p>
+        <p class="fitem"><a href="#" data-foot>Promo berjalan</a></p>
+        <p class="fitem"><a href="#" data-foot>Fitur lengkap</a></p>
+        <p class="fitem"><a href="#" data-foot>Bekerja sama dengan banyak event</a></p>
+      </div>
+      <div>
+        <p class="fh">Informasi</p>
+        <p class="fitem"><a href="#" data-foot>Menggunakan Event di GOERS</a></p>
+        <p class="fitem"><a href="#" data-foot>Solusi &amp; Benefit</a></p>
+        <p class="fitem"><a href="#" data-foot>Tentang Kami</a></p>
+        <p class="fitem"><a href="#" data-foot>Pusat Bantuan</a></p>
+        <p class="fitem"><a href="#" data-foot>Syarat &amp; Ketentuan</a></p>
+        <p class="fitem"><a href="#" data-foot>Kebijakan Privasi</a></p>
+        <p class="fitem"><a href="#" data-foot>Blog</a></p>
+      </div>
+      <div>
+        <p class="fh">Bisnis</p>
+        <p class="fitem"><a href="#" data-foot>Solusi Bisnis</a></p>
+        <p class="fitem"><a href="#" data-foot>Manajemen Event</a></p>
+        <p class="fitem"><a href="#" data-foot>Venue &amp; Ticket</a></p>
+        <p class="fitem"><a href="#" data-foot>Tour &amp; Wisata</a></p>
+        <p class="fitem"><a href="#" data-foot>Experience</a></p>
+        <p class="fitem"><a href="#" data-foot>Seminar &amp; Workshop</a></p>
+      </div>
+      <div>
+        <p class="fh">Tentang GOERS</p>
+        <p class="fitem"><a href="#" data-foot>Tentang Kami</a></p>
+        <p class="fitem"><a href="#" data-foot>Blog</a></p>
+        <p class="fitem"><a href="#" data-foot>Karir</a></p>
+        <p class="fitem"><a href="#" data-foot>Press Kit</a></p>
+      </div>
+    </div>
+    <div class="support">
+      <p class="fh">Layanan Pelanggan</p>
+      <p class="fitem">goersapp.com</p>
+      <p class="fh">Customer Service</p>
+      <p class="fitem">Senin–Jumat, 08.00–21.00 WIB</p>
+      <p class="fitem">Sabtu–Minggu, 09.00–18.00 WIB</p>
+      <p class="fitem">+62 811-xxxx-xxxx</p>
+      <p class="fitem">help@goersapp.com</p>
+    </div>
+    <div class="fbrand">
+      <p class="fh">Member of</p>
+      <div class="marks"><b>KAWAN</b><span class="cert">ISO<br>Certified</span><span class="cert">Digital<br>Indonesia</span></div>
+      <div class="fsoc">
+        <button type="button" data-net="Instagram" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></button>
+        <button type="button" data-net="X" aria-label="X"><svg class="ic"><use href="#i-x"/></svg></button>
+        <button type="button" data-net="YouTube" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></button>
+      </div>
+      <p class="legal">GOERS adalah platform teknologi event dan ticketing.<br>Digunakan oleh berbagai event organizer di Indonesia.</p>
+    </div>
+  </footer>
+
+  <nav class="bottomnav" aria-label="Navigasi utama">
+    <button type="button" data-nav="home"><svg class="ic"><use href="#i-home"/></svg>Home</button>
+    <button type="button" data-nav="explore"><svg class="ic"><use href="#i-compass"/></svg>Explore</button>
+    <button type="button" data-nav="fav"><svg class="ic"><use href="#i-heart"/></svg>Favorite<span class="navbadge" id="navBadge" hidden>0</span></button>
+    <button type="button" data-nav="profile"><svg class="ic"><use href="#i-user"/></svg>Profile</button>
+  </nav>
+</div>
+
+<div class="backdrop" id="backdrop"></div>
+
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shTitle" aria-hidden="true">
+  <div class="sh-hero">
+    <a class="sh-link" id="shLink" target="_blank" rel="noopener" aria-label="Buka halaman event"><img id="shImg" alt="" decoding="async" onerror="this.style.display='none'"></a>
+    <button type="button" class="sh-btn sh-fav" id="shFav" aria-pressed="false" aria-label="Simpan ke favorit"><svg class="ic out"><use href="#i-heart"/></svg></button>
+    <button type="button" class="sh-btn sh-close" id="shClose" aria-label="Tutup detail"><svg class="ic"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="sh-body">
+    <p class="esub" id="shSub"></p>
+    <h2 id="shTitle"></h2>
+    <p class="sh-org"><img class="sh-ava" src="logo-wardah.png" alt="" data-fb="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23fdeef4'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23d81b64' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">Wardah AM Club<span class="vcheck"><svg class="ic"><use href="#i-check"/></svg></span></p>
+    <div class="sh-meta"><svg class="ic"><use href="#i-cal"/></svg><span id="shDate"></span></div>
+    <div class="sh-meta"><svg class="ic"><use href="#i-pin"/></svg><span id="shVenue"></span></div>
+    <div class="sh-meta"><svg class="ic"><use href="#i-user"/></svg><span id="shPax"></span></div>
+    <div class="sh-meta"><svg class="ic"><use href="#i-ticket"/></svg><span id="shTier"></span></div>
+    <p class="sh-inc-t">Sudah termasuk</p>
+    <ul class="sh-inc" id="shInc"></ul>
+    <div class="perfo">
+      <div class="qty">
+        <button type="button" id="shMinus" aria-label="Kurangi jumlah"><svg class="ic s"><use href="#i-minus"/></svg></button>
+        <b id="shQty">1</b>
+        <button type="button" id="shPlus" aria-label="Tambah jumlah"><svg class="ic s"><use href="#i-plus"/></svg></button>
+      </div>
+      <div class="tot"><span>Total</span><div><s id="shWas" hidden></s><b class="totv" id="shTotal"></b></div></div>
+    </div>
+  </div>
+  <div class="sh-cta">
+    <button type="button" class="sh-share" id="shareBtn" aria-label="Bagikan event"><svg class="ic"><use href="#i-share"/></svg></button>
+    <button type="button" class="btn pri sh-buy" id="buyBtn"><svg class="ic s"><use href="#i-ticket"/></svg>Beli Tiket</button>
+  </div>
+</section>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(()=>{
+"use strict";
+const $=s=>document.querySelector(s);
+const EVENTS=[
+{id:"gbk",title:"Wardah AM Club GBK",sub:"Wardah Woman Fun Run 5K",venue:"Plaza Timur GBK, Jakarta",date:"2026-11-13",dateLabel:"13 Nov 2026 – 15 Nov 2026",time:"07:00",tz:"WIB",tier:"Regular",pax:8,price:250,img:"banner-jakarta.webp",url:"https://jakarta-pi.vercel.app/",scheduleNote:"+8 others"},
+{id:"bali",title:"Wardah AM Club Bali",sub:"Wardah Woman Fun Run 5K",venue:"Monumen Bajra Sandhi, Bali",date:"2026-11-22",dateLabel:"22 Nov 2026",time:"06:00–10:00",tz:"WITA",tier:"Regular",pax:100,price:250,img:"banner-bali.webp",url:"https://bali-flame.vercel.app/"},
+{id:"bgr",title:"Wardah AM Club Bogor",sub:"Wardah Woman Fun Run 5K",venue:"MARKT LANE SENTUL, Bogor",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:250,img:"banner-bogor.webp",url:"https://bogor-id.vercel.app/"},
+{id:"bdg",title:"Wardah AM Club Bandung",sub:"Wardah Woman Fun Run 5K",venue:"Grand Yogya Kepatihan, Bandung",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:500,price:250,img:"banner-bandung.webp",url:"https://bandung-eight.vercel.app/"},
+{id:"smg",title:"Wardah AM Club Semarang",sub:"Wardah Woman Fun Run 5K",venue:"Gajahmada Plaza, Semarang",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:250,img:"banner-semarang.webp",url:"https://semarang-nu.vercel.app/"},
+{id:"mks",title:"Wardah AM Club Makassar",sub:"Wardah Woman Fun Run 5K",venue:"Centre Point of Indonesia, Makassar",date:"2026-12-06",dateLabel:"06 Dec 2026",time:"06:00–10:00",tz:"WITA",tier:"Early Bird",pax:10,price:175,was:250,off:30,img:"banner-makassar.webp",url:"https://makasar-bay.vercel.app/"},
+{id:"mdn",title:"Wardah AM Club Medan",sub:"Wardah Woman Fun Run 5K",venue:"Brastagi Supermarket Tiara, Medan",date:"2026-12-06",dateLabel:"06 Dec 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:200,was:250,off:20,img:"banner-medan.webp",url:"https://medan-id.vercel.app/"}
+];
+const ORG="Wardah AM Club";
+const INC=["Race pack & nomor peserta (bib)","Kaos event & goodies Wardah","Finisher medal & e-sertifikat","Doorprize eksklusif untuk peserta"];
+const MO=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+const AV=[["A","#f5c6ce"],["R","#c8d6f0"],["S","#f2d9ae"],["D","#c9e6cf"]];
+const CHIPS=[["all","Semua"],["promo","Promo"],["populer","Populer"],["terbaru","Terbaru"]];
+const METATXT={all:n=>n+" event menarik untuk kamu sekarang",promo:n=>n+" event sedang diskon",populer:n=>n+" event paling ramai diikuti",terbaru:n=>n+" event dengan jadwal terdekat",fav:n=>n+" event favorit tersimpan"};
+let mode="all",tab="",qty=1,cartN=0,cur=null,spyLock=0,lastFocus=null,toastT=0;
+const favs=new Set();
+const list=$("#list"),chips=$("#chips"),metaEl=$("#listMeta"),empty=$("#empty"),badge=$("#cartBadge"),navBadge=$("#navBadge"),sheet=$("#sheet"),backdrop=$("#backdrop"),toastEl=$("#toast"),hdr=$("#hdr"),shFav=$("#shFav"),shImg=$("#shImg"),shLink=$("#shLink");
+const fmt=d=>{const p=d.split("-");return +p[2]+" "+MO[+p[1]-1]+" "+p[0]};
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+
+function paxHTML(n){const k=Math.min(n,3);let h="";for(let i=0;i<k;i++)h+=`<i style="background:${AV[i][1]}">${AV[i][0]}</i>`;return `<span class="pax">${h}${n>k?`<em>+${n-k}</em>`:""}</span>`}
+function cardHTML(e,i){const f=favs.has(e.id);return `<article class="card" data-id="${e.id}" style="--i:${i}"><div class="hero"><a class="hero-link" href="${e.url}" target="_blank" rel="noopener" aria-label="Buka halaman event ${esc(e.title)}"><img src="${e.img}" alt="${esc(e.title)} — ${e.sub}" loading="${i<2?"eager":"lazy"}" decoding="async" onerror="this.style.display='none'">${e.off?`<span class="tag">−${e.off}%</span>`:""}</a><button type="button" class="heart${f?" on":""}" data-fav="${e.id}" aria-pressed="${f}" aria-label="Simpan ${esc(e.title)} ke favorit"><svg class="ic out"><use href="#i-heart"/></svg></button></div><div class="cbody"><p class="esub">${e.sub}</p><h3>${esc(e.title)}</h3><p class="meta"><svg class="ic s"><use href="#i-user"/></svg>${ORG}</p><p class="meta"><svg class="ic s"><use href="#i-pin"/></svg>${esc(e.venue)}</p><p class="meta"><svg class="ic s"><use href="#i-cal"/></svg>${esc(e.dateLabel||fmt(e.date))} · ${e.time} ${e.tz}${e.scheduleNote?` ${esc(e.scheduleNote)}`:""}</p><div class="cfoot">${paxHTML(e.pax)}<span class="cost">${e.off?`<b class="off">−${e.off}%</b>`:""}<b class="price">IDR ${e.price}K</b></span></div><button type="button" class="tap" aria-label="Lihat detail ${esc(e.title)}"></button></div></article>`}
+
+function renderChips(){let h="";if(favs.size)h+=`<button type="button" class="chip${mode==="fav"?" on":""}" data-mode="fav">Favorit · ${favs.size}</button>`;for(const[k,l]of CHIPS)h+=`<button type="button" class="chip${mode===k?" on":""}" data-mode="${k}">${l}</button>`;chips.innerHTML=h}
+function applyMode(){let l=EVENTS.slice();if(mode==="fav")l=l.filter(e=>favs.has(e.id));else if(mode==="promo")l=l.filter(e=>e.off);else if(mode==="populer")l.sort((a,b)=>b.pax-a.pax);else if(mode==="terbaru")l.sort((a,b)=>a.date<b.date?-1:1);list.innerHTML=l.map(cardHTML).join("");empty.hidden=l.length>0;metaEl.textContent=METATXT[mode](l.length)}
+function setTab(t){tab=t;document.querySelectorAll(".bottomnav [data-nav]").forEach(b=>{const on=b.dataset.nav===t;b.classList.toggle("on",on);if(on)b.setAttribute("aria-current","true");else b.removeAttribute("aria-current")})}
+function setMode(m){mode=m;if(m!=="fav"&&tab==="fav")setTab("explore");renderChips();applyMode()}
+function syncFavBtn(b,on){b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)}
+function toggleFav(id,btn){if(favs.has(id))favs.delete(id);else favs.add(id);const on=favs.has(id);if(btn)syncFavBtn(btn,on);if(cur&&cur.id===id)syncFavBtn(shFav,on);navBadge.textContent=favs.size;navBadge.hidden=!favs.size;if(mode==="fav"&&!favs.size){setMode("all");return}renderChips();if(mode==="fav")applyMode()}
+function toast(m){toastEl.textContent=m;toastEl.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>toastEl.classList.remove("show"),2400)}
+
+function updTotal(){$("#shQty").textContent=qty;$("#shTotal").textContent="IDR "+(cur?cur.price*qty:0)+"K"}
+function openSheet(e){cur=e;qty=1;shImg.style.display="";shImg.src=e.img;shImg.alt=e.title+" — "+e.sub;shLink.href=e.url;shLink.setAttribute("aria-label","Buka halaman event "+e.title);$("#shSub").textContent=e.sub;$("#shTitle").textContent=e.title;$("#shVenue").textContent=e.venue;$("#shDate").textContent=(e.dateLabel||fmt(e.date))+" · "+e.time+" "+e.tz+(e.scheduleNote?" "+e.scheduleNote:"");$("#shPax").textContent=e.pax+" orang sudah mendaftar";$("#shTier").textContent="Tiket "+e.tier+(e.was?" · hemat IDR "+(e.was-e.price)+"K":"");const w=$("#shWas");w.hidden=!e.was;if(e.was)w.textContent="IDR "+e.was+"K";syncFavBtn(shFav,favs.has(e.id));$("#shInc").innerHTML=INC.map(t=>`<li><svg class="ic s"><use href="#i-check"/></svg>${t}</li>`).join("");updTotal();lastFocus=document.activeElement;backdrop.classList.add("show");sheet.classList.add("show");sheet.setAttribute("aria-hidden","false");document.body.classList.add("lock");$("#shClose").focus()}
+function closeSheet(){sheet.classList.remove("show");backdrop.classList.remove("show");sheet.setAttribute("aria-hidden","true");document.body.classList.remove("lock");if(lastFocus&&lastFocus.focus)lastFocus.focus();lastFocus=null;cur=null;shImg.removeAttribute("src");shLink.removeAttribute("href")}
+
+list.addEventListener("click",e=>{const h=e.target.closest("[data-fav]");if(h){toggleFav(h.dataset.fav,h);return}if(e.target.closest(".hero-link"))return;const c=e.target.closest(".card");if(c)openSheet(EVENTS.find(x=>x.id===c.dataset.id))});
+chips.addEventListener("click",e=>{const b=e.target.closest("[data-mode]");if(b)setMode(b.dataset.mode)});
+ $("#shClose").addEventListener("click",closeSheet);
+shFav.addEventListener("click",e=>{if(cur)toggleFav(cur.id,e.currentTarget)});
+ $("#shMinus").addEventListener("click",()=>{if(qty>1){qty--;updTotal()}});
+ $("#shPlus").addEventListener("click",()=>{if(qty<10){qty++;updTotal()}});
+ $("#buyBtn").addEventListener("click",()=>{if(!cur)return;cartN+=qty;badge.textContent=cartN;badge.hidden=false;badge.classList.remove("pop");void badge.offsetWidth;badge.classList.add("pop");toast(qty+" tiket \u201C"+cur.title+"\u201D masuk keranjang");closeSheet()});
+ $("#shareBtn").addEventListener("click",()=>{const u="https://goersapp.com/wardah-am-club";if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(u).then(()=>toast("Tautan event disalin"),()=>toast(u));else toast(u)});
+backdrop.addEventListener("click",closeSheet);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&sheet.classList.contains("show"))closeSheet()});
+ $("#cartBtn").addEventListener("click",()=>toast(cartN?cartN+" tiket menunggu checkout di keranjang":"Keranjangmu masih kosong"));
+ $("#locBtn").addEventListener("click",()=>toast("Menampilkan event di sekitar Jakarta"));
+ $("#exploreBtn").addEventListener("click",()=>{spyLock=Date.now()+800;setMode("all");setTab("explore");$("#experiences").scrollIntoView({behavior:"smooth"})});
+document.querySelectorAll("[data-net]").forEach(b=>b.addEventListener("click",()=>toast("Membuka profil GOERS di "+b.dataset.net)));
+document.querySelector("footer").addEventListener("click",e=>{const a=e.target.closest("[data-foot]");if(a){e.preventDefault();toast("Pratinjau demo — tautan tidak aktif")}});
+document.querySelector(".bottomnav").addEventListener("click",e=>{const b=e.target.closest("[data-nav]");if(!b)return;spyLock=Date.now()+800;const k=b.dataset.nav;setTab(k);if(k==="home"){if(mode!=="all")setMode("all");window.scrollTo({top:0,behavior:"smooth"})}else if(k==="explore"){$("#experiences").scrollIntoView({behavior:"smooth"})}else if(k==="fav"){setMode(mode==="fav"?"all":"fav");$("#experiences").scrollIntoView({behavior:"smooth"})}else{$("#profile").scrollIntoView({behavior:"smooth"})}});
+addEventListener("scroll",()=>{hdr.classList.toggle("scrolled",scrollY>6);if(Date.now()<spyLock||tab==="fav"||sheet.classList.contains("show"))return;setTab(scrollY<60?"home":"explore")},{passive:true});
+
+const ld={"@context":"https://schema.org","@type":"ItemList",itemListElement:EVENTS.map((e,i)=>({"@type":"ListItem",position:i+1,item:{"@type":"Event",name:e.title,url:e.url,startDate:e.date+"T"+e.time.split("–")[0]+":00"+(e.tz==="WITA"?"+08:00":"+07:00"),location:{"@type":"Place",name:e.venue},image:e.img,offers:{"@type":"Offer",price:e.price+"000",priceCurrency:"IDR",availability:"https://schema.org/InStock"}}}))};
+const sc=document.createElement("script");sc.type="application/ld+json";sc.textContent=JSON.stringify(ld);document.head.appendChild(sc);
+document.querySelectorAll("img[data-fb]").forEach(im=>{const fb=()=>im.src=im.dataset.fb;if(im.complete&&im.naturalWidth===0)fb();else im.addEventListener("error",fb,{once:true})});
+setTab("home");renderChips();applyMode();
+})();
+</script>
+</body>
+</html>
