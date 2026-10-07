@@ -180,7 +180,7 @@ header{top:26px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
 
-/* PROMAXXX visual upgrade */
+
 :root{--ink:#171923;--ink2:#5e6472;--mut:#8b91a0;--line:#e8e9ee;--soft:#f6f7f9;--brand:#e4005a;--brand2:#b90049;--brand-soft:#fff0f6;--green:#0b9b69}
 body{background:radial-gradient(circle at 8% -4%,rgba(228,0,90,.08),transparent 28%),radial-gradient(circle at 96% 12%,rgba(255,174,205,.16),transparent 25%),#fff}
 .page{max-width:460px;box-shadow:0 0 0 1px rgba(20,20,30,.025)}
@@ -369,12 +369,12 @@ footer{background:linear-gradient(180deg,#fafbfc,#f4f5f7);padding:30px 19px 34px
 "use strict";
 const $=s=>document.querySelector(s);
 const EVENTS=[
-{id:"gbk",title:"Wardah AM Club GBK",sub:"Wardah Woman Fun Run 5K",venue:"Plaza Timur GBK, Jakarta",date:"2026-11-13",dateLabel:"13 Nov 2026 – 15 Nov 2026",time:"07:00",tz:"WIB",tier:"Regular",pax:8,price:250,img:"banner-jakarta.webp",url:"https://jakarta-pi.vercel.app/",scheduleNote:"+8 others"},
-{id:"bali",title:"Wardah AM Club Bali",sub:"Wardah Woman Fun Run 5K",venue:"Monumen Bajra Sandhi, Bali",date:"2026-11-22",dateLabel:"22 Nov 2026",time:"06:00–10:00",tz:"WITA",tier:"Regular",pax:100,price:250,img:"banner-bali.webp",url:"https://bali-flame.vercel.app/"},
+{id:"gbk",title:"Wardah AM Club GBK",sub:"Wardah Woman Fun Run 5K",venue:"Plaza Timur GBK, Jakarta",date:"2026-11-13",dateLabel:"13 Nov 2026 – 15 Nov 2026",time:"07:00",tz:"WIB",tier:"Regular",pax:8,price:250,img:"banner-jakarta.webp",url:"https://jakarta-id.vercel.app/",scheduleNote:"+8 others"},
+{id:"bali",title:"Wardah AM Club Bali",sub:"Wardah Woman Fun Run 5K",venue:"Monumen Bajra Sandhi, Bali",date:"2026-11-22",dateLabel:"22 Nov 2026",time:"06:00–10:00",tz:"WITA",tier:"Regular",pax:100,price:250,img:"banner-bali.webp",url:"https://bali-id.vercel.app/"},
 {id:"bgr",title:"Wardah AM Club Bogor",sub:"Wardah Woman Fun Run 5K",venue:"MARKT LANE SENTUL, Bogor",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:250,img:"banner-bogor.webp",url:"https://bogor-id.vercel.app/"},
-{id:"bdg",title:"Wardah AM Club Bandung",sub:"Wardah Woman Fun Run 5K",venue:"Grand Yogya Kepatihan, Bandung",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:500,price:250,img:"banner-bandung.webp",url:"https://bandung-eight.vercel.app/"},
-{id:"smg",title:"Wardah AM Club Semarang",sub:"Wardah Woman Fun Run 5K",venue:"Gajahmada Plaza, Semarang",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:250,img:"banner-semarang.webp",url:"https://semarang-nu.vercel.app/"},
-{id:"mks",title:"Wardah AM Club Makassar",sub:"Wardah Woman Fun Run 5K",venue:"Centre Point of Indonesia, Makassar",date:"2026-12-06",dateLabel:"06 Dec 2026",time:"06:00–10:00",tz:"WITA",tier:"Early Bird",pax:10,price:175,was:250,off:30,img:"banner-makassar.webp",url:"https://makasar-bay.vercel.app/"},
+{id:"bdg",title:"Wardah AM Club Bandung",sub:"Wardah Woman Fun Run 5K",venue:"Grand Yogya Kepatihan, Bandung",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:500,price:250,img:"banner-bandung.webp",url:"https://bandung-id.vercel.app/"},
+{id:"smg",title:"Wardah AM Club Semarang",sub:"Wardah Woman Fun Run 5K",venue:"Gajahmada Plaza, Semarang",date:"2026-11-29",dateLabel:"29 Nov 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:250,img:"banner-semarang.webp",url:"https://makasarfinal.vercel.app/"},
+{id:"mks",title:"Wardah AM Club Makassar",sub:"Wardah Woman Fun Run 5K",venue:"Centre Point of Indonesia, Makassar",date:"2026-12-06",dateLabel:"06 Dec 2026",time:"06:00–10:00",tz:"WITA",tier:"Early Bird",pax:10,price:175,was:250,off:30,img:"banner-makassar.webp",url:"https://makasarfinal-1.vercel.app/"},
 {id:"mdn",title:"Wardah AM Club Medan",sub:"Wardah Woman Fun Run 5K",venue:"Brastagi Supermarket Tiara, Medan",date:"2026-12-06",dateLabel:"06 Dec 2026",time:"06:00–10:00",tz:"WIB",tier:"Regular",pax:100,price:200,was:250,off:20,img:"banner-medan.webp",url:"https://medan-id.vercel.app/"}
 ];
 const ORG="Wardah AM Club";
